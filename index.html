@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestión de Héroes</h1>
+      <button id="btn-add">Agregar Héroe</button>
+      <div id="container-form" class="modal">
+        <form>
+          <button type="button" class="close" id="close-modal">×</button>
+          <label>Código:</label>
+          <input type="number" id="codigo">
+          <label>Nombre:</label>
+          <input type="text" id="nombre">
+          <label>Edad:</label>
+          <input type="number" id="edad">
+          <label>Ciudad:</label>
+          <input type="text" id="ciudad">
+          <label>Imagen URL:</label>
+          <input type="text" id="imagen" placeholder="URL de la imagen del héroe">
+          <button id="btn" type="submit">Guardar</button>
+        </form>
+      </div>
+      <table>
+          <thead>
+              <tr>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Ciudad</th>
+                  <th>Imagen</th>
+                  <th>Acciones</th>
+              </tr>
+          </thead>
+          <tbody id="tabla-H"></tbody>
+      </table>
+    </div>
+
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
